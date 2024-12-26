@@ -30,9 +30,16 @@ public class EmailService {
         this.emailSender = emailSender;
     }
 
-    // EXEMPLO, modificar depois
-    public void enviarEmailCriacaoEndereco(String destinatario, String nomePessoa) {
-        enviar(destinatario, "Endereço criado com sucesso", nomePessoa, "email-criacao-template.ftl");
+    public void enviarEmailCriacao(String destinatario, String assunto, String nomePessoa) {
+        enviar(destinatario, assunto, nomePessoa, "email-criacao-template.ftl");
+    }
+
+    public void enviarEmailEdicao(String destinatario, String assunto, String nomePessoa) {
+        enviar(destinatario, assunto, nomePessoa, "email-edicao-template.ftl");
+    }
+
+    public void enviarEmailExclusao(String destinatario, String assunto, String nomePessoa) {
+        enviar(destinatario, assunto, nomePessoa, "email-exclusao-template.ftl");
     }
 
     private void enviar(String destinatario, String assunto, String nomePessoa, String pathTemplate) {

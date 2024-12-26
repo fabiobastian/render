@@ -1,0 +1,56 @@
+PROJETO - E-COMMERCE DE LOJA DE CALCADOS
+
+Pasta config:
+- OpenApiConfig
+
+Pasta controller:
+- ClienteController
+- EnderecoController
+- PagamentoController
+- PedidoController
+- CategoriaController
+- ProdutoController
+
+Pasta dto:
+- Inserir as mensagens de validação em todos as classes
+- CategoriaCreateDTO - ok
+- CategoriaDTO - ok
+- ClienteCreateDTO - ok
+- ClienteDTO - ok
+- EnderecoDTO - ok
+- PagamentoCreateDTO - ok
+- PagamentoDTO - ok
+- PedidoCreateDTO - ok
+- PedidoDTO - ok
+- ProdutoCreateDTO - ok
+- ProdutoDTO - ok
+
+Pasta entity:
+- Categoria - ok
+- Cliente - ok
+- Endereco - ok
+- FormaPagamento - ok
+- ItemPedido - ok
+- Pagamento - ok
+- Pedido - ok
+- Produto - ok
+- StatusPedido - ok
+
+Pasta exception:
+- BancoDeDadosException
+- CustomGlobalExceptionHandler
+- RegraDeNegocioException
+
+Pasta service:
+- CategoriaService
+- ClienteService
+- EmailService - ok
+- EnderecoService
+- PagamentoService
+- PedidoService
+- ProdutoService
+
+Pasta repository:
+
+Arquivo Principal:
+- CalcadoApiApplication

@@ -49,7 +49,7 @@
       <tr>
         <td>
           <p>Olá, ${nome}!</p>
-          <p>Seu endereço foi criado com sucesso.</p>
+          <p>Seu recurso foi criado com sucesso.</p>
           <p>Se precisar de ajuda, entre em contato conosco.</p>
         </td>
       </tr>

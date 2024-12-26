@@ -1,9 +1,6 @@
 package br.com.dbc.vemser.calcadoapi.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 
 @Data
 @ToString
@@ -14,7 +11,7 @@ public class Produto {
     private String nome;
     private String descricao;
     private double preco;
-    private float tamanho;
+    private double tamanho;
     private String cor;
     private int estoque;
 }

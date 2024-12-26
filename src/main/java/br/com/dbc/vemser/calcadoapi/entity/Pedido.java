@@ -1,11 +1,9 @@
 package br.com.dbc.vemser.calcadoapi.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Data
 @ToString
@@ -13,8 +11,8 @@ import java.time.LocalDate;
 @AllArgsConstructor
 public class Pedido {
     private Integer idPedido;
-    private Integer idPagamento;
+    private Integer idCliente;
     private LocalDate data;
-    private double total;
     private StatusPedido statusPedido;
+    private List<ItemPedido> listaProdutos;
 }

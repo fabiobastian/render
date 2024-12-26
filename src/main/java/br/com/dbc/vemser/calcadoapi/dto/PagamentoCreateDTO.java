@@ -9,7 +9,7 @@ import javax.validation.constraints.NotNull;
 public class PagamentoCreateDTO {
 
     @NotNull
-    private double valor;
+    private Integer idPedido;
     @NotNull
     private FormaPagamento formaPagamento;
 }

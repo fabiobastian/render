@@ -9,7 +9,6 @@ public enum StatusPedido {
     CANCELADO("Pedido cancelado"),
     EM_PROCESSAMENTO("Pedido em processamento"),
     FINALIZADO("Pedido finalizado"),
-
     EM_TRANSITO("Pedido em trânsito"),
     ENTREGUE("Pedido entregue"),
     ATRASADO("Entrega atrasada"),
@@ -19,5 +18,14 @@ public enum StatusPedido {
 
     StatusPedido(String descricao) {
         this.descricao = descricao;
+    }
+
+    public static StatusPedido fromName(String name) {
+        for (StatusPedido status : values()) {
+            if (status.name().equalsIgnoreCase(name)) {
+                return status;
+            }
+        }
+        throw new IllegalArgumentException("Status de pagamento inválido: " + name);
     }
 }

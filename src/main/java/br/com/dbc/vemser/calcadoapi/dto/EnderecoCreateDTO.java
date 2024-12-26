@@ -2,20 +2,22 @@ package br.com.dbc.vemser.calcadoapi.dto;
 
 import lombok.Data;
 
-import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
 @Data
 public class EnderecoCreateDTO {
 
-    @NotEmpty
-    private String logradouro;
     @NotNull
+    private Integer idCliente;
+    @NotBlank
+    private String logradouro;
+    @NotBlank
     private String numero;
-    @NotEmpty
+    @NotBlank
     private String bairro;
-    @NotEmpty
+    @NotBlank
     private String cidade;
-    @NotEmpty
+    @NotBlank
     private String cep;
 }
